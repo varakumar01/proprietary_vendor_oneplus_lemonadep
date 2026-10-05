@@ -7224,9 +7224,9 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libEGL",
                 "libGLESv3",
+                "libc",
                 "libm",
                 "libdl",
-                "libc",
             ],
         },
     },
@@ -7252,60 +7252,6 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libc",
                 "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libXDocProcessSDK",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libXDocProcessSDK.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "liblog",
-                "libYTCommon",
-                "libEGL",
-                "libGLESv3",
-                "libc",
-                "libz",
-                "libm",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libYTCommon",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libYTCommon.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libz",
-                "libm",
-                "libstdc++_vendor",
-                "libdl",
-                "libc",
             ],
         },
     },
@@ -7552,6 +7498,60 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libc",
                 "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libXDocProcessSDK",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libXDocProcessSDK.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libYTCommon",
+                "libEGL",
+                "libGLESv3",
+                "libc",
+                "libz",
+                "libm",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libYTCommon",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libYTCommon.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libz",
+                "libm",
+                "libstdc++_vendor",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -9313,6 +9313,35 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "liboplus-uah-client",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/liboplus-uah-client.so",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.urcc-V1-ndk_platform",
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "liboplus_dehaze_module",
     owner: "oneplus",
     strip: {
@@ -9819,6 +9848,71 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libuahcore",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libuahcore.so",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.urcc-V1-ndk_platform",
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libxml2",
+                "libcrypto",
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "liburcccore",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/liburcccore.so",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.urcc-V1-ndk_platform",
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libxml2",
+                "libbinder_ndk",
+                "libutils",
+                "libcrypto",
+                "libprotobuf-cpp-lite-3.9.1-vendorcompat",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libwatermark_photo",
     owner: "oneplus",
     strip: {
@@ -10034,6 +10128,33 @@ cc_prebuilt_library_shared {
                 "libbinder_ndk",
                 "libhwconfigurationutil",
                 "vendor.oplus.hardware.sendextcamcmd-V1-ndk_platform",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.oplus.hardware.urcc-V1-ndk_platform",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/vendor.oplus.hardware.urcc-V1-ndk_platform.so",
+            ],
+            shared_libs: [
+                "libjsoncpp_shim",
+                "libbinder_ndk",
+                "libjsoncpp",
+                "libc++",
                 "libc",
                 "libm",
                 "libdl",
@@ -10480,6 +10601,15 @@ prebuilt_etc_xml {
     device_specific: true,
 }
 
+prebuilt_etc_xml {
+    name: "vendor.oplus.hardware.urcc-service.xml",
+    owner: "oneplus",
+    src: "proprietary/odm/etc/vintf/manifest/vendor.oplus.hardware.urcc-service.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    device_specific: true,
+}
+
 cc_prebuilt_binary {
     name: "vendor.oplus.hardware.biometrics.fingerprint@2.1-service",
     owner: "oneplus",
@@ -10509,6 +10639,37 @@ cc_prebuilt_binary {
                 "anc.hal",
                 "libolc_vnd",
                 "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    device_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.oplus.hardware.urcc-service",
+    owner: "oneplus",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/bin/hw/vendor.oplus.hardware.urcc-service",
+            ],
+            shared_libs: [
+                "vendor.oplus.hardware.urcc-V1-ndk_platform",
+                "libbase",
+                "liblog",
+                "libcutils",
+                "libbinder_ndk",
+                "libcrypto",
                 "libc++",
                 "libc",
                 "libm",
