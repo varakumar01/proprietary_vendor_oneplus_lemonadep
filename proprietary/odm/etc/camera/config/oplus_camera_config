@@ -715,6 +715,13 @@
 },
 
 {
+  "VendorTag": "com.oplus.feature.export.super.text.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+
+{
   "VendorTag": "com.oplus.face.rectify.support",
   "Type": "Byte",
   "Count": "1",
