@@ -1791,13 +1791,6 @@
     "Type": "Int32",
     "Count": "1",
     "Value": "1"
-},
-
-{
-    "VendorTag": "com.oplus.aps.support.hw_jpeg",
-    "Type": "Int32",
-    "Count": "1",
-    "Value": "1"
 }
 
 ]
