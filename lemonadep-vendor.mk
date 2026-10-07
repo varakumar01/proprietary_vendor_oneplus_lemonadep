@@ -1065,6 +1065,7 @@ PRODUCT_PACKAGES += \
     libtriplecam_image_optical_zoom \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
+    libui-oplus \
     libwatermark_photo \
     libyuvwrapper \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
