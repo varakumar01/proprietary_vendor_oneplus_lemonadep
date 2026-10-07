@@ -6255,6 +6255,7 @@ cc_prebuilt_library_shared {
                 "libnativewindow",
                 "libhidlbase",
                 "libAlgoProcess",
+                "libapsjpeg",
                 "libc++",
                 "libc",
                 "libm",
@@ -6302,6 +6303,7 @@ cc_prebuilt_library_shared {
                 "libhidlbase",
                 "libselinux",
                 "libexif-jpeg-aps",
+                "libextendfile",
                 "libc++",
                 "libc",
                 "libm",
@@ -6495,6 +6497,34 @@ cc_prebuilt_library_shared {
                 "libdl",
                 "libm",
                 "liblog",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libFilterWrapper",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libFilterWrapper.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcutils",
+                "libutils",
+                "libPolarrRender",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
             ],
         },
     },
@@ -7070,6 +7100,31 @@ cc_prebuilt_library_shared {
             shared_libs: [
                 "liblog",
                 "libz",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libaideblur",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libaideblur.so",
+            ],
+            shared_libs: [
+                "libSNPE",
+                "liblog",
                 "libc",
                 "libm",
                 "libdl",
@@ -8222,6 +8277,30 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libextendfile",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libextendfile.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libgf_hal_G3",
     owner: "oneplus",
     strip: {
@@ -8367,6 +8446,33 @@ cc_prebuilt_library_shared {
                 "proprietary/odm/lib64/libmpbase.so",
             ],
             shared_libs: [
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libmsnativefilter",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libmsnativefilter.so",
+            ],
+            shared_libs: [
+                "libz",
+                "liblog",
+                "libEGL",
+                "libGLESv2",
+                "libm",
+                "libdl",
                 "libc",
             ],
         },
