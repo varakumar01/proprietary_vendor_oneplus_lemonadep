@@ -1722,5 +1722,11 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
+},
+{
+  "VendorTag": "com.oplus.feature.video.front.1080p.60fps.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 }
 ]
