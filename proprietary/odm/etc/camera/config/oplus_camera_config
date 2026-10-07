@@ -1710,5 +1710,11 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
+},
+{
+  "VendorTag": "com.oplus.only.high.picture.size.heif.in.aps",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 }
 ]
