@@ -1690,5 +1690,11 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
+},
+{
+  "VendorTag": "com.oplus.feature.video.surface.release.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 }
 ]
