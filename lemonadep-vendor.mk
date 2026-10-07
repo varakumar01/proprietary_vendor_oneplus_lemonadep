@@ -777,6 +777,7 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/lemonadep/proprietary/vendor/firmware/vpu20_4v_unsigned.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v_unsigned.mbn
 
 PRODUCT_PACKAGES += \
+    libcamxexternalformatutils \
     com.qti.camx.chiiqutils \
     com.qti.eisv2 \
     com.qti.eisv3 \
@@ -863,7 +864,6 @@ PRODUCT_PACKAGES += \
     libbitmlenginev2 \
     libcamera_nn_stub \
     libcamerapostproc \
-    libcamxexternalformatutils \
     libcamxfacialfeatures \
     libcamxfdalgo \
     libcamxfdengine \
@@ -909,9 +909,9 @@ PRODUCT_PACKAGES += \
     libDeVIS \
     libdehaze \
     libfastov_dsp \
+    libnightvision \
     liblvimfs \
     liblvimfs_wrapper \
-    libnightvision \
     anc.hal \
     android.hardware.secure_element@1.0-impl \
     com.qti.sensor.gc02m1b.lemonade \
@@ -926,12 +926,24 @@ PRODUCT_PACKAGES += \
     com.oplus.node.videoenhance \
     fingerprint.goodix_G3.default \
     vendor.qti.esepowermanager@1.1-impl \
+    lib2DSlender \
     libAlgoInterface \
     libAlgoProcess \
+    libAncFilter \
+    libAncHumBokeh \
+    libAncHumBokehPost \
+    libAncHumVideoBase \
+    libAncHumanDoubleExposure \
+    libAncHumanSegFigureFusion \
+    libAncSegBaseSdk \
     libAncSegmentSdk \
+    libBokehPre \
     libCOppLceTonemapAPI \
+    libCaptureBokeh \
     libEIS \
+    libFDClite \
     libFaceBeautyCap \
+    libFaceBeautyJni \
     libFaceBeautyPICap \
     libFaceBeautyPre \
     libFaceDistortionCorrection \
@@ -939,13 +951,17 @@ PRODUCT_PACKAGES += \
     libImageWarpMask \
     libOGLManager \
     libOPLUS_SCPortrait \
+    libPerfectColor \
     libPerfectlyClearCrux \
     libPerfectlyClearCruxOpt \
     libPolarrRender \
     libPreviewDecisionOld \
     libQnnHtpStub \
+    libRedeyeReduce \
     libSNPE \
     libSNPE_G \
+    libSuperRaw \
+    libTrafficMode \
     libVDBayerHDR \
     libVDBlurless \
     libVDDualCameraBlurlessAPI \
@@ -961,11 +977,18 @@ PRODUCT_PACKAGES += \
     lib_rectify \
     libaideblur \
     libaisal \
+    libaisd \
+    libaiseg \
+    libalCFR \
+    libancbase_rt_bokeh \
+    libancbase_segbase \
     libancbase_segment \
     libaps_frame_registration \
     libapsdarksight \
     libapsexif \
     libapsjpeg \
+    libapspng \
+    libapsyuv \
     libarcsoft_calibverify_TriCamera \
     libarcsoft_distortion_correction \
     libarcsoft_dual_sat \
@@ -985,6 +1008,8 @@ PRODUCT_PACKAGES += \
     libarcsoft_high_dynamic_range_couple_v4 \
     libarcsoft_high_dynamic_range_v4 \
     libarcsoft_lensstaindetection \
+    libarcsoft_long_exposure_capture \
+    libarcsoft_long_exposure_preview \
     libarcsoft_low_light_hdr \
     libarcsoft_pic_best \
     libarcsoft_portraitSN_hvx_stub \
@@ -1003,15 +1028,18 @@ PRODUCT_PACKAGES += \
     libdualcam_image_optical_zoom \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
+    libeffect_custom \
     libexif-jpeg-aps \
     libextendfile \
     libgf_hal_G3 \
     libhta \
     libhwconfigurationutil_odm \
     libhyperlapse \
+    libimgClarityEvaluate \
     libml_util \
     libmpbase \
     libmsnativefilter \
+    libnpu \
     libolc_vnd \
     libop-ai-beauty-body-detection \
     libop-ai-beauty-faceretouch-cn \
@@ -1021,6 +1049,7 @@ PRODUCT_PACKAGES += \
     libormshalclient \
     libosenseaidlhalclient \
     libosensehalclient \
+    libpngwrapper \
     libsnpe_dsp_domains_v2 \
     libsnpe_dsp_domains_v3 \
     libsnpe_htp \
@@ -1034,6 +1063,7 @@ PRODUCT_PACKAGES += \
     libtriplecam_optical_zoom_control \
     libtriplecam_video_optical_zoom \
     libwatermark_photo \
+    libyuvwrapper \
     vendor.oplus.hardware.cameraextension-V1-service-impl \
     vendor.oplus.hardware.orms@1.0 \
     vendor.oplus.hardware.osense.client@1.0 \
