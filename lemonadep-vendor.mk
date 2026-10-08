@@ -906,8 +906,6 @@ PRODUCT_PACKAGES += \
     libthreadutils \
     vendor.oplus.hardware.cammidasservice@1.0 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
-    liblvimfs \
-    liblvimfs_wrapper \
     anc.hal \
     android.hardware.secure_element@1.0-impl \
     com.qti.sensor.gc02m1b.lemonade \
@@ -1038,6 +1036,8 @@ PRODUCT_PACKAGES += \
     libhwconfigurationutil_odm \
     libhyperlapse \
     libimgClarityEvaluate \
+    liblvimfs \
+    liblvimfs_wrapper \
     libml_util \
     libmpbase \
     libmsnativefilter \
