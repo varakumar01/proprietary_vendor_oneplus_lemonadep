@@ -11,49 +11,6 @@ soong_namespace {
 }
 
 cc_prebuilt_library_shared {
-    name: "libcamxexternalformatutils",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/vendor/lib/libcamxexternalformatutils.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libcamxexternalformatutils.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libsync",
-                "libz",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "com.qti.camx.chiiqutils",
     owner: "oneplus",
     strip: {
@@ -3932,6 +3889,34 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcamxexternalformatutils",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcamxexternalformatutils.so",
+            ],
+            shared_libs: [
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libz",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcamxfacialfeatures",
     owner: "oneplus",
     strip: {
@@ -5455,153 +5440,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libDeVIS",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/libDeVIS.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libDeVIS.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libdehaze",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/libdehaze.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libm",
-                "libc",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libdehaze.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libm",
-                "libc",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libfastov_dsp",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/libfastov_dsp.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "liblog",
-                "libcdsprpc",
-                "libm",
-                "libc",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libfastov_dsp.so",
-            ],
-            shared_libs: [
-                "libdl",
-                "liblog",
-                "libcdsprpc",
-                "libm",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "libnightvision",
-    owner: "oneplus",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm: {
-            srcs: [
-                "proprietary/odm/lib/libnightvision.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libfastov_dsp",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-        android_arm64: {
-            srcs: [
-                "proprietary/odm/lib64/libnightvision.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcdsprpc",
-                "libfastov_dsp",
-                "libm",
-                "libdl",
-                "libc",
-            ],
-        },
-    },
-    compile_multilib: "both",
-    prefer: true,
-    device_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "liblvimfs",
     owner: "oneplus",
     strip: {
@@ -6642,6 +6480,30 @@ cc_prebuilt_library_shared {
                 "libc",
                 "libm",
                 "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libDeVIS",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libDeVIS.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libm",
+                "libdl",
+                "libc",
             ],
         },
     },
@@ -8926,6 +8788,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libdehaze",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libdehaze.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libm",
+                "libc",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libdualcam_image_optical_zoom",
     owner: "oneplus",
     strip: {
@@ -9067,6 +8954,31 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libm",
                 "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libfastov_dsp",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libfastov_dsp.so",
+            ],
+            shared_libs: [
+                "libdl",
+                "liblog",
+                "libcdsprpc",
+                "libm",
                 "libc",
             ],
         },
@@ -9272,6 +9184,32 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libEGL",
                 "libGLESv2",
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libnightvision",
+    owner: "oneplus",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libnightvision.so",
+            ],
+            shared_libs: [
+                "liblog",
+                "libcdsprpc",
+                "libfastov_dsp",
                 "libm",
                 "libdl",
                 "libc",
