@@ -1746,5 +1746,11 @@
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
+},
+{
+  "VendorTag": "com.oplus.camera.support.cross.window.blur",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
 }
 ]
