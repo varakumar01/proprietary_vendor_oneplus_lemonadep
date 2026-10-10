@@ -192,6 +192,9 @@ PRODUCT_COPY_FILES += \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/filters_lut/default:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/default \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/filters_lut/delight-P3.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/delight-P3.CUBE.rgb.bin \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/filters_lut/delight-V1.CUBE.rgb.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/delight-V1.CUBE.rgb.bin \
+    vendor/oneplus/lemonadep/proprietary/odm/etc/camera/filters_lut/dolby_preview_3dlut.cube:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/dolby_preview_3dlut.cube \
+    vendor/oneplus/lemonadep/proprietary/odm/etc/camera/filters_lut/dolby_preview_hdr_3dlut.cube:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/dolby_preview_hdr_3dlut.cube \
+    vendor/oneplus/lemonadep/proprietary/odm/etc/camera/filters_lut/dolby_preview_sdr_3dlut.cube:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/dolby_preview_sdr_3dlut.cube \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/filters_lut/drjw1994.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/drjw1994.bin \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/filters_lut/drjw2010.bin:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/drjw2010.bin \
     vendor/oneplus/lemonadep/proprietary/odm/etc/camera/filters_lut/f_bin_hideaki:$(TARGET_COPY_OUT_ODM)/etc/camera/filters_lut/f_bin_hideaki \
