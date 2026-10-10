@@ -1730,7 +1730,7 @@
   "Value": "1"
 },
 {
-  "VendorTag": "com.oplus.feature.video.hlg10.support",
+  "VendorTag": "com.oplus.feature.video.dv.support",
   "Type": "Byte",
   "Count": "1",
   "Value": "1"
