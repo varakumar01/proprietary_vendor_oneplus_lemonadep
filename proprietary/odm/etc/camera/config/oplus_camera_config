@@ -1736,6 +1736,12 @@
   "Value": "1"
 },
 {
+  "VendorTag": "com.oplus.feature.video.dv.60fps.support",
+  "Type": "Byte",
+  "Count": "1",
+  "Value": "1"
+},
+{
   "VendorTag": "com.oplus.feature.video.10bit.support",
   "Type": "Byte",
   "Count": "1",
